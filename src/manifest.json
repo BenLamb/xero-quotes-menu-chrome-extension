@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Xero Quotes Link",
+  "description": "This extension adds a link to Quotes in the Accounts menu in Xero",
+  "version": "1.0",
+
+  "permissions": [ "https://go.xero.com/" ],
+  "content_scripts": [
+    {
+      "matches": ["https://go.xero.com/*"],
+      "js": ["add-quote-button.js"]
+    }
+  ]
+}
